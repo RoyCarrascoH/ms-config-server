@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  error:
+    include-message: always
+spring:
+  application:
+    name: service-movement
+  data:
+    mongodb:
+      database: MovementsDB
+      auto-index-creation: true
+      host: localhost
+      port: 27017
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9093/eureka
+message:
+  demo: leido desde local
