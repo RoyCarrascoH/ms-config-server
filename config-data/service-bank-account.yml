@@ -18,7 +18,7 @@ eureka:
 resilience4j:
   circuitbreaker:
     instances:
-      parameter-service:
+      bank-account:
         failureRateThreshold: 50
         minimumNumberOfCalls: 4
         slidingWindowType: COUNT_BASED
