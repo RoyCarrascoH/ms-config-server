@@ -7,14 +7,14 @@ spring:
     name: service-movement
   data:
     mongodb:
+      host: mongodb
+      port: 27017
       database: MovementsDB
       auto-index-creation: true
-      host: localhost
-      port: 27017
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9093/eureka
+      defaultZone: http://ms-discovery:9093/eureka
 resilience4j:
   circuitbreaker:
     instances:

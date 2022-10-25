@@ -7,14 +7,14 @@ spring:
     name: service-bank-account
   data:
     mongodb:
+      host: mongodb
+      port: 27017
       database: BankAccountDB
       auto-index-creation: true
-      host: localhost
-      port: 27017
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9093/eureka
+      defaultZone: http://ms-discovery:9093/eureka
 resilience4j:
   circuitbreaker:
     instances:
