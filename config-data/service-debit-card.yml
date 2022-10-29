@@ -1,23 +1,23 @@
 server:
-  port: 8085
+  port: 8086
   error:
     include-message: always
 local:
   property:
     host:
+      ms-bank-account: ms-bank-account
       ms-client: ms-client
       ms-credits: ms-credits
       ms-movement: ms-movement
       ms-loan: ms-loan
-      ms-debit-card: ms-debit-card
 spring:
   application:
-    name: service-bank-account
+    name: service-debit-card
   data:
     mongodb:
       host: mongodb
       port: 27017
-      database: BankAccountDB
+      database: DebitCardDB
       auto-index-creation: true
 eureka:
   client:
