@@ -1,11 +1,12 @@
 HELP.md
-ms-config-server/target/classes/
-ms-config-server/target/generated-sources/
-ms-config-server/target/generated-test-sources/
-ms-config-server/target/maven-archiver/
-ms-config-server/target/maven-status/
-ms-config-server/target/test-classes/
-ms-config-server/target/classes/
+# target/
+target/generated-sources/
+target/generated-test-sources/
+target/maven-archiver/
+target/maven-status/
+target/surefire-reports/
+target/test-classes/
+target/classes/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
